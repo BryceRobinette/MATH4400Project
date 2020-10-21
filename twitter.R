@@ -1,9 +1,11 @@
 library(RMariaDB)
+source("config.R")
+
 con <- dbConnect(RMariaDB::MariaDB(),
-                 host = "batestocks.cgrwtpcjkd6h.us-west-2.rds.amazonaws.com",
-                 dbname = "TwitterFeed",
-                 user = "school",
-                 password = "password123")
+                 host = host,
+                 dbname = dbname,
+                 user = user,
+                 password = password)
 
 query <- "SELECT * FROM tweets;"
 
