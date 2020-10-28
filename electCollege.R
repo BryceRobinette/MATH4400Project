@@ -230,7 +230,7 @@ lda.pred = predict(lda.fit,df[test.index,])
 lda.pred$class
 mytable = table(lda.pred$class,df[test.index,'win'])
 print(mytable)
-mean(lda.pred$class==df[test.index,'outcome'])
+mean(lda.pred$class==df[test.index,'win'])
 
 
 
