@@ -1,0 +1,154 @@
+\documentclass[11pt, oneside]{article}   	
+\usepackage{geometry}                		
+\geometry{letterpaper, margin=1.25in}                   		
+\usepackage[parfill]{parskip}    		
+\usepackage{graphicx}						
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\pagenumbering{gobble}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{wrapfig}
+\usepackage{multicol}
+%-----------------------------------------------------------------------------
+\usepackage{listings} %For including R code in LaTex
+\lstset{language=R,
+    basicstyle=\small\ttfamily,
+    stringstyle=\color{DarkGreen},
+    otherkeywords={0,1,2,3,4,5,6,7,8,9},
+    morekeywords={TRUE,FALSE},
+    deletekeywords={data,frame,length,as,character},
+    keywordstyle=\color{blue},
+    commentstyle=\color{DarkGreen},
+} %color Scheme for R code in LaTex
+%--------------------------------------------------------------------------------
+%\begin{bmatrix}
+%\bigg|_{}^{}        for "evaluated at..."
+%\sim		   for tilde
+
+
+%-----------------------------------------
+%Alter author
+%\hspace{1.5cm}\parbox[t][2.5cm][t]{4cm}{
+%	Bryce Robinette\\
+%	Jacelyn Villalobos
+%}
+%\parbox[t][2.5cm][t]{4cm}{
+%	Steven Bate\\
+%	Kursten Reznik
+%}
+%------------------------------------------
+
+\title{Sentiment Analysis\\
+\small{and some stuff or whatever}
+}
+
+\author{\hspace{1.5cm}\parbox[t][2.5cm][t]{4cm}{
+	Kursten Reznik\\
+	Steven Bate
+}
+\parbox[t][2.5cm][t]{4cm}{
+	Bryce Robinette\\
+	Jacelyn Villalobos
+}
+}
+
+
+
+
+\date{10/29/2020}							
+
+\begin{document}
+\maketitle
+
+\pagebreak
+
+\tableofcontents
+
+%\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\break
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+A major point of interest today is the outcome of the upcoming presidential election. Attempting to predict the presidential election is nothing new, however with the advent of social media, we have a new source of information from which to draw. In this report, we perform a \emph{sentiment analysis} on data mined from twitter. Although we may not be able to extend our finding to the broad population, it still yields insight into how the people might vote. Indeed, it is nevertheless, one more tool that can be used in our endeavors to predict the outcome of the 2020 presidential election.\\
+\\
+\textcolor{blue}{It will be written in a fancy and understandable way the totality of what we do once we have come closer to the end. As we get closer and know what will hold for the sentiment, votes, map, and random forest, I'll fill in the introduction.}\\
+\\
+Indeed, the outcome of a U.S. presidential election not only holds great ramifications for the U.S., but many other nations as well. As a heavy-hitter on the world stage, many governments, citizens, industries, economic experts, and policy makers are affected by the outcome of the U.S. presidential election. It is the intent of this report to contribute to the ongoing practice of statistics, and the methods used in predicting presidential elections.\\
+\\
+\textcolor{blue}{More Yaba Yaba, if desired.}\\ 
+
+
+\section{Data and Methods}
+We obtained data from several sources for this report. We created the main dataset from data mining twitter in the form of word text. These tweets were scraped by using relevant hashtags, such as: \#trump and \#biden.\\
+\\
+We also obtained electoral vote data from 1976 up to the 2016 election.\\
+\\
+We created database in MySQL and performed our statistical analysis using the programming language \textbf\textsf{R}. Furthermore, we imported our data into Tableau in order to create relevant visualizations\\
+\\
+\textcolor{blue}{We have other data as well. Like, citizen votes dating back to 1976, and I think Kursten has a set of data she has been working with as well for her wordcloud and map thing. Let me know what data you want included. Even if we don't perform any serious analysis on it, it can be used to give context.}\\
+\\
+It should be noted that this conclusions cannot be extended to the entire population because we are retrieving data from a social media platform in which not everyone uses. Even if the an individual has twitter, they may not be into politics and writing political hashtags, which our data is based on.\\
+\\
+\textcolor{blue}{\emph{a bunch of fun and sightfulwords to be able to show:}}\\
+44\% of 18–24 year olds use Twitter. 31\% of 25–30 year olds use Twitter.\\
+26\% of 30–49 year olds use Twitter. 17\% of 50–64 year olds use Twitter.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Data and Methods Section Notes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Twitter was founded in the beginning of 2006.
+
+%--------------------------------------------------------------------------------------------------------
+\subsection{Sentiment}
+
+
+
+\subsection{Wordcloud}
+
+
+
+\subsection{Data Regression}
+
+\subsubsection{LDA}
+
+
+
+\subsection{Random Forest}
+
+
+
+\section{Results}
+
+
+
+\section{Conclusion}
+
+
+
+\pagebreak
+\section{References and Sources}
+
+
+\pagebreak
+\section{Appendix}
+Hashtags used:
+\begin{itemize}
+	\item \#trump
+    \item \#republican
+    \item \#donaldtrump
+    \item \#maga
+    \item \#teamtrump
+    \item \#trump2020 
+    \item \#biden
+    \item \#democrat
+    \item \#joebiden
+    \item \#teambiden
+    \item \#biden2020
+\end{itemize}
+
+
+
+\end{document}
