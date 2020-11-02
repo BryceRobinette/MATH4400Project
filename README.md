@@ -14,3 +14,8 @@ host = "Database Hostname"
 dbname = "Scheme Name"
 user = "username"
 password = "password"
+
+
+
+
+twitter.R -> DONE
