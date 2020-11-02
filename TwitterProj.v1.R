@@ -101,6 +101,23 @@ library(RColorBrewer)
 wordcloud(biden.corpus.clean, min.freq = 10, colors = brewer.pal(8,"Dark2"),max.words = 50)
 wordcloud(trump.corpus.clean, min.freq = 10, colors = brewer.pal(8,"Dark2"),max.words = 50)
 
+DTM <- DocumentTermMatrix(biden.trump.corpus.clean)
+inspect(DTM)
+sparse_DTM <- removeSparseTerms(DTM, 0.97)
+tweets <- as.data.frame(as.matrix(sparse_DTM))
+tweets <- as.data.frame(as.matrix(tweets))
+colnames(tweets) <- make.names(colnames(tweets))
+dim(tweets)
+
+
+
+DTM.trump <- DocumentTermMatrix(trump.corpus.clean)
+inspect(DTM.trump)
+sparse_DTM.trump <- removeSparseTerms(DTM.trump, 0.97)
+tweets.trump <- as.data.frame(as.matrix(sparse_DTM.trump))
+tweets.trump <- as.data.frame(as.matrix(tweets.trump))
+colnames(tweets.trump) <- make.names(colnames(tweets.trump))
+
 
 
 
