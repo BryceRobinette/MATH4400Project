@@ -18,5 +18,5 @@ password = "password"
 
 
 
-twitter.R -> DONE
+twitter.R -> DONE,
 twitterScraper.R -> DONE
