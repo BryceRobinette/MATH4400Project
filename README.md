@@ -19,3 +19,4 @@ password = "password"
 
 
 twitter.R -> DONE
+twitterScraper.R -> DONE
