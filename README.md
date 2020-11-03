@@ -23,4 +23,5 @@ twitterScraper.R -> DONE
 
 electoral.R -> DONE ( for regression on states, use the cvs file found in the "MyData" folder called electData.csv)
 electCollege.R -> DONE ( it is a mess but it is how we curated electoral college data)
+
 TwitterProj.R -> DONE (Sentiment, WordCloud)
