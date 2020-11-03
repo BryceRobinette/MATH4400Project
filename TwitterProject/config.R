@@ -7,7 +7,7 @@ access_secret = ""
 googleAPIkey = ""
 
 #Database
-host = "batestocks.cgrwtpcjkd6h.us-west-2.rds.amazonaws.com"
-dbname = "TwitterFeed"
-user = "school"
-password = "password123"
+host = ""
+dbname = ""
+user = ""
+password = ""
